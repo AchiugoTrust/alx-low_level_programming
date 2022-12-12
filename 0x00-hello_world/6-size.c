@@ -1,4 +1,6 @@
 #include <stdio.h>
+#define S "Size of a"
+
 /**
  * main - Entry
  * Return: Always 0
