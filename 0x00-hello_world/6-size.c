@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void) 
+int main(void)
 {
 
 	printf("%s char: %d byte(s)\n", S, sizeof(char));
