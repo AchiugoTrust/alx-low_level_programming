@@ -6,12 +6,17 @@
  */
 void print_rev(char *s)
 {
-	int i = 0;
+	int size, value;
 
-	while (s[i] != '\0')
-		i++;
-	for (i = i - 1; i >= 0; i--)
-		_putchar(s[i]);
-
-	_putchar('\n');
+	size = 0;
+	for (value = 0; s[value] != 0; value++)
+	{
+		size++;
+	}
+	for (value = size - 1; value >= 0; value--)
+	{
+		_putchar(s[value]);
+	}
+	/* 10 is ASCII value for \n */
+	_putchar(10);
 }
