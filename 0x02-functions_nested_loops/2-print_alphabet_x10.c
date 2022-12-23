@@ -13,7 +13,6 @@ void print_alphabet_x10(void)
 	{
 		/* 97 is ASCII value for 'a' */
 		n = 97;
-		
 		while (n <= 122)
 		{
 			_putchar(n);
