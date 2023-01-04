@@ -24,8 +24,8 @@ char *_strchr(char *s, char c)
 			return ('\0');
 		}
 	}
-else
+	else
 	{
-		return (&s[]);
+		return (&s[i]);
 	}
 }
