@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-/*
+/**
  * _strchr - finds char in a string and returns its address
  * Return - pointer to first char c in string s
  */

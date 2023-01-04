@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-/*
+/**
  * _memcpy - copies n bytes from memory area src to dest
  * Return - pointer to dest
  */
