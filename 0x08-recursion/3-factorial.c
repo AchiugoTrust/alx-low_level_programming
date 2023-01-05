@@ -18,7 +18,7 @@ int factorial(int n)
 	return n * factorial(n - 1);
 }
 
-int main()
+int main(void)
 {
 	printf("%i", factorial (5));
 }
