@@ -21,11 +21,11 @@ int square_root_recursion(int n, int trialNum)
 {	/* trialNum - potential square root number */
 
 	int trial;
-	trial = ((n / trial) + 1 + trial) / 2;
+	trial = ((n / trialNum) + 1 + trialNum) / 2;
 
-	if ((n / trial) == trial && n % trial == 0)
+	if ((n / trialNum) == trialNum && n % trialNum == 0)
 	{
-		return (trial);
+		return (trialNum);
 	}
 	else if (trialNum == trial)
 	{
@@ -33,7 +33,7 @@ int square_root_recursion(int n, int trialNum)
 	}
 	else
 	{
-		return (square_root_recursion(n, trial));
+		return (square_root_recursion(n, trialNum));
 	}
 }
 
