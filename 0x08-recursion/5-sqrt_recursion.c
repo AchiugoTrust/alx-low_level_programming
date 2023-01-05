@@ -27,13 +27,13 @@ int square_root_recursion(int n, int trialNum)
 	{
 		return (trialNum);
 	}
-	else if (trialNum == trial)
+	else if (trial == trialNum)
 	{
 		return (-1);
 	}
 	else
 	{
-		return (square_root_recursion(n, trialNum));
+		return (square_root_recursion(n, trial));
 	}
 }
 
