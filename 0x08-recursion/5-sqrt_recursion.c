@@ -8,8 +8,7 @@
 
 int square_root_recursion(int n, int trialNum)
 {       /* trialNum - potential square root number */
-
-        int trial;
+	int trial;
         trial = ((n / trialNum) + 1 + trialNum) / 2;
 
         if ((n / trialNum) == trialNum && n % trialNum == 0)
