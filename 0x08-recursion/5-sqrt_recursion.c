@@ -16,3 +16,24 @@ int _sqrt_recursion(int n)
 		return (square_root_recursion(n, (n / 2) + 1));
 	}
 }
+
+int square_root_recursion(int n, int trialNum)
+{	/* trialNum - potential square root number */
+
+	int trial;
+	trial = ((n / trial) + 1 + trial) / 2;
+
+	if ((n / trial) == trial && n % trial == 0)
+	{
+		return (trial);
+	}
+	else if (trialNum == trial)
+	{
+		return (-1);
+	}
+	else
+	{
+		return (square_root_recursion(n, trial));
+	}
+}
+
