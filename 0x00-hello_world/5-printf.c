@@ -1,7 +1,8 @@
 #include <stdio.h>
-/** 
+/**
  * main - prints "Hello, printf"
- * Return : Always 0
+ * Description: 'It outputs a sentence'
+ * Return : Always 0 (Success)
  */
 int main(void)
 {
