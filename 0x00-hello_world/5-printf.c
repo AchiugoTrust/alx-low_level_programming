@@ -2,7 +2,7 @@
 /**
  * main - prints "Hello, printf"
  * Description: 'It outputs a sentence'
- * Return : Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
