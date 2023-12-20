@@ -6,7 +6,7 @@
 void print_alphabet_x10(void)
 {
 	char lower;
-	char no_of_times;
+	int no_of_times;
 
 	for (no_of_times = '0'; no_of_times < '10'; no_of_times++)
 	{
