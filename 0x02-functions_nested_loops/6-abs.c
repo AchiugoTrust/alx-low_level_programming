@@ -6,14 +6,13 @@
  * @int: Takes an integer
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	int n;
-
 	if (n <= 0)
 	{
-		_putchar('n' * '-1');
-		return (n);
+		_putchar('-');
+		return (-n);
 	}
 
-	return (0);
+	return (n);
+}
