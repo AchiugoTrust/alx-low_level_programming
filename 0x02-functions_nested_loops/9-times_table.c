@@ -19,9 +19,10 @@ void times_table(void)
 
 			x = numb * mult;
 
-			if (x <= 9)
+			if ((x /10) == 0)
 			{
 				_putchar(' ');
+				_putchar(x + '0');
 			} else
 			{
 				_putchar((x / 10) + '0');
