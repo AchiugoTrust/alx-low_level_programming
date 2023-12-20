@@ -2,6 +2,7 @@
 
 /**
  * _islower - checks for lowercase character
+ * @c: parameter
  * Return: Always 0
  */
 
@@ -9,7 +10,7 @@ int _islower(int c)
 {
 	char lower;
 
-	for (lower = 'a'; lower <= 'z'; lower ++)
+	for (lower = 'a'; lower <= 'z'; lower++)
 	{
 		if (c == lower)
 		{
