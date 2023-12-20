@@ -1,10 +1,11 @@
-#include <stdio.h>
+#include <main.h>
 /**
- * main - prints putchar
+ * putchar - prints a character
+ * @c: character to be returned
  * Return: Always 0
  */
-int main(void)
+char _putchar(char c)
 {
-	putchar("_putchar");
-	return (0);
+	putchar('c');
+	return (c);
 }
