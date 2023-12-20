@@ -19,7 +19,7 @@ void times_table(void)
 
 			x = numb * mult;
 
-			if ((x /10) == 0)
+			if ((x / 10) == 0)
 			{
 				_putchar(' ');
 				_putchar(x + '0');
