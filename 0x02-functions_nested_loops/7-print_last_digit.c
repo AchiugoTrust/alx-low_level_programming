@@ -3,7 +3,7 @@
 /**
  * print_last_digit - prints the last digit of a number
  * @n : My choice parameter
- * 
+ * Return: Always Success
  */
 
 int print_last_digit(int n)
@@ -14,6 +14,7 @@ int print_last_digit(int n)
 	{
 		last_digit *= -1;
 	}
-	
 	_putchar(last_digit + '0');
-}	
+
+	return (0);
+}
