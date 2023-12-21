@@ -3,7 +3,6 @@
  * main - checks if an int is positive or negative
  * Return: Always 0
  */
-
 int main(void)
 {
 	int i = 0;
