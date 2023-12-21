@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * main - checks if an int is positive or negative
- * @i: Choice integer
  * Return: Always 0
  */
 
