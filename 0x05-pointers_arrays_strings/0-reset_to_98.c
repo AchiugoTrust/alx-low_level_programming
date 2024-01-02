@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * reset_to_98 - updates a parameter to 98
  * Return: Always 0;
  * @n: parameter pointed to
