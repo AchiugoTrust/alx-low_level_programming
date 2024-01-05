@@ -28,5 +28,5 @@ char *rot13(char *b)
 		}
 		i++;
 	}
-	return (s);
+	return (b);
 }
