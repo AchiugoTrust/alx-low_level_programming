@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strcat - joins two strings with n bytes
+ * _strncat - joins two strings with n bytes
  * @dest: string to be appended to
  * @src: string to be appended to dest
  * @n: number of bytes to append
