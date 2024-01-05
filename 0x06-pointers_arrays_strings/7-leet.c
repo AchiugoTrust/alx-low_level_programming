@@ -3,24 +3,29 @@
 /**
  * leet - encodes a string into 1337
  * @a: input
- * Return: a
+ * Return: s
  */
 
-char *leet(char *a)
+char *leet(char *s)
 {
-	int i, j;
-	char array1[] = "aAeEoOtTlL";
-	char array2[] = "4433007711";
+	int count = 0, i;
+	int low_letters[] = {97, 101, 111, 116, 108};
+	int upp_letters[] = {65, 69, 79, 84, 76};
+	int numbers[] = {52, 51, 48, 55, 49};
 
-	for (i = 0; a[i] = '\0'; a++)
+	while (*(s + count) != '\0')
 	{
-		for (j = 0; j < 10; j++)
+		for (i = 0; i < 5; i++)
 		{
-			if (a[i] == array1[j])
+			if (*(s + count) == low_letters[i] || *(s + count) == upp_letters[i])
 			{
-				a[i] = array2[j];
+				*(s + count) = numbers[i];
+				break;
 			}
 		}
+	count++;
 	}
-	return (a);
+
+	return (s);
 }
+
