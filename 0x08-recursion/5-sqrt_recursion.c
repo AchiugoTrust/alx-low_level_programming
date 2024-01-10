@@ -18,6 +18,16 @@ int _sqrt_recursion(int n)
 	}
 }
 
+/**
+ * square_root_recursion - determines square root of number
+ * @n: input number to find square root for
+ *
+ * @guess: what square root might be
+ *
+ * Return: natural square root of n
+ */
+
+
 int square_root_recursion(int n, int guess)
 {
 	int newguess;
@@ -37,4 +47,3 @@ int square_root_recursion(int n, int guess)
 		return (square_root_recursion(n, newguess));
 	}
 }
-
