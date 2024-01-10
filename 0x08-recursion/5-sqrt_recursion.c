@@ -1,9 +1,11 @@
 #include "main.h"
 
+int actual_sqrt_recursion(int n, int i);
 /**
- * _sqrt_recursion - returns natural square root of a number
- * @n: input number
- * Return: natural square root of n
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: number to calculate the square root of
+ *
+ * Return: the resulting square root
  */
 
 int _sqrt_recursion(int n)
@@ -12,38 +14,23 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	else
-	{
-		return (square_root_recursion(n, (n / 2) + 1));
-	}
+	return (actual_sqrt_recursion(n, 0));
 }
 
 /**
- * square_root_recursion - determines square root of number
- * @n: input number to find square root for
+ * actual_sqrt_recursion - recurses to find the natural
+ * square root of a number
+ * @n: number to calculate the sqaure root of
+ * @i: iterator
  *
- * @guess: what square root might be
- *
- * Return: natural square root of n
+ * Return: the resulting square root
  */
 
-
-int square_root_recursion(int n, int guess)
+int actual_sqrt_recursion(int n, int i)
 {
-	int newguess;
-
-	newguess = ((n / guess) + 1 + guess) / 2;
-
-	if ((n / guess) == guess && n % guess == 0)
-	{
-		return (guess);
-	}
-	else if (newguess == guess)
-	{
+	if (i * i > n)
 		return (-1);
-	}
-	else
-	{
-		return (square_root_recursion(n, newguess));
-	}
+	if (i * i == n)
+		return (i);
+	return (actual_sqrt_recursion(n, i + 1));
 }
