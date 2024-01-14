@@ -4,8 +4,7 @@
 
 /**
 * main - function to multiply two numbers
-* @argc: argument to determine number of arguments 
-*
+* @argc: argument to determine number of arguments
 * @argv: argument array
 * Return: (0)
 */
