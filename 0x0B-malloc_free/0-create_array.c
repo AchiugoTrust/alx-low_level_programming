@@ -7,18 +7,13 @@
 
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i;
 	char *array = malloc(size);
 
 	if (size == 0 || array == 0)
 	{
 		return (NULL);
 	}
-
-	for (i = 0; i < size; i++)
-	{
-		array[i] = c;
-	}
-	array[i] = '\0';
+	while (size--)
+		array[size] = c;
 	return (array);
 }
