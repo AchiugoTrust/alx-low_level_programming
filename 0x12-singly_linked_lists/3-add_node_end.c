@@ -1,52 +1,37 @@
 #include "lists.h"
-
 /**
- * add_node_end - add element as a new node at the end of list_t list
- * @head: input head of singly linked list to add node to
- *
- * @str: input character string to add to list_t list
- *
- * Return: pointer to newly added element of list
+ * add_node_end - adds a new node at the end of a list_t list
+ * @head: parameter head
+ * @str: string
+ * Return: pointer to new node
  */
-
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new =  malloc(sizeof(list_t));
-	list_t *mover = (*head);
+	list_t *n;
+	list_t *temp = *head;
+	unsigned int length = 0;
 
-	if (new == NULL)
+	while (str[length])
+		length++;
+
+	n = malloc(sizeof(list_t));
+	if (!n)
 		return (NULL);
-	new->str = strdup(str);
-	if (new->str == NULL)
+
+	n->str = strdup(str);
+	n->len = length;
+	n->next = NULL;
+
+	if (*head == NULL)
 	{
-		free(new);
-		return (NULL);
+		*head = n;
+		return (n);
 	}
-	new->len = string_length(str);
-	new->next = NULL;
-	if (mover == NULL)
-	{
-		(*head) = new;
-		return (*head);
-	}
-	while (mover->next != NULL)
-		mover = mover->next;
-	mover->next = new;
-	return (*head);
-}
 
-/**
- * string_length - determines the length of a string
- * @s: input character string to determine length of
- *
- * Return: integer count of length
- */
+	while (temp->next)
+		temp = temp->next;
 
-int string_length(const char *s)
-{
-	int i = 0;
+	temp->next = n;
 
-	for (i = 0; s[i]; i++)
-		continue;
-	return (i);
+	return (n);
 }
